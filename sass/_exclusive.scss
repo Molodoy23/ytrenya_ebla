@@ -1,0 +1,45 @@
+.exclusive {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: $bg-color;
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.87;
+    color: $title-color;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.85;
+    color: $title-color;
+    display: flex;
+  }
+  &__title-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img-support {
+    margin-left: 5px;
+  }
+}
+.exclusive-games {
+  display: flex;
+  margin-top: 8px;
+  background: #34363c;
+  border-radius: 8px;
+  &__title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.85;
+    color: $description-color;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  &__img {
+    width: 140px;
+    height: 139px;
+    padding: 8px;
+  }
+}

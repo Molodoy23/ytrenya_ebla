@@ -1,0 +1,319 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+input {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  font-family: "FuturaBT-Book";
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: text;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  display: block;
+}
+
+/* класс для индикации блоков */
+.outline_red {
+  border: 1px solid;
+  border-color: red;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*Один общий оутлайн для отмечания компонентов на верстаемых страницах*/
+.devOutline {
+  outline-color: red;
+  outline-width: 1px;
+  outline-style: inset;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.container {
+  max-width: 320px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__content {
+  background: #1e1e1e;
+}
+
+img {
+  border-radius: 4px;
+}
+
+.slots {
+  padding-top: 16px;
+  background: #1e1e1e;
+}
+.slots__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.87;
+  color: white;
+}
+.slots__link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0.85;
+  color: white;
+  display: flex;
+}
+.slots__title-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slots__img-support {
+  margin-left: 5px;
+}
+
+.slots-games {
+  display: flex;
+  margin-top: 8px;
+  background: #34363c;
+  border-radius: 8px;
+}
+.slots-games__title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0.85;
+  color: #abb0ba;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.slots-games__img {
+  width: 140px;
+  height: 139px;
+  padding: 8px;
+}
+
+.exclusive {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #1e1e1e;
+}
+.exclusive__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.87;
+  color: white;
+}
+.exclusive__link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0.85;
+  color: white;
+  display: flex;
+}
+.exclusive__title-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exclusive__img-support {
+  margin-left: 5px;
+}
+
+.exclusive-games {
+  display: flex;
+  margin-top: 8px;
+  background: #34363c;
+  border-radius: 8px;
+}
+.exclusive-games__title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0.85;
+  color: #abb0ba;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.exclusive-games__img {
+  width: 140px;
+  height: 139px;
+  padding: 8px;
+}
+
+.jackpot {
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(shutterstock_1389470843.jpg);
+  border-radius: 8px 8px 0px 0px;
+}
+.jackpot__title {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 0.84;
+  text-transform: uppercase;
+  color: white;
+}
+.jackpot__sum {
+  padding-bottom: 70px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 0.85;
+  color: #00b962;
+}
+.jackpot__name-group {
+  text-align: center;
+  padding-top: 28px;
+}
+
+.jackpot__levels-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 0.85;
+  text-transform: uppercase;
+  color: #abb0ba;
+}
+.jackpot__levels-size {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0.84;
+  color: white;
+}
+.jackpot__levels-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.silver-level,
+.gold-level,
+.platinum-level {
+  margin-bottom: 8px;
+  background: #51545b;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.jackpot-games {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+  padding-bottom: 8px;
+}
+.jackpot-games__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.87;
+  color: white;
+}
+.jackpot-games__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+.jackpot-games__list__link:not(:last-child) {
+  margin-right: 7px;
+}
+.jackpot-games__link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0.85;
+  color: white;
+  display: flex;
+}
+.jackpot-games__link:not(:last-child) {
+  margin-right: 7px;
+}
+.jackpot-games__img-support {
+  margin-left: 5px;
+}/*# sourceMappingURL=main.css.map */

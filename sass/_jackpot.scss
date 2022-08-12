@@ -1,0 +1,89 @@
+.jackpot {
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(shutterstock_1389470843.jpg);
+  border-radius: 8px 8px 0px 0px;
+  &__title {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 0.84;
+    text-transform: uppercase;
+    color: $title-color;
+  }
+  &__sum {
+    padding-bottom: 70px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 0.85;
+    color: #00b962;
+  }
+  &__name-group {
+    text-align: center;
+    padding-top: 28px;
+  }
+}
+.jackpot__levels {
+  &-title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 0.85;
+    text-transform: uppercase;
+    color: $description-color;
+  }
+  &-size {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0.84;
+    color: $title-color;
+  }
+  &-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.silver-level,
+.gold-level,
+.platinum-level {
+  margin-bottom: 8px;
+  background: #51545b;
+  border-radius: 8px;
+  padding: 15px;
+}
+.jackpot-games {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+  padding-bottom: 8px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.87;
+    color: $title-color;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 16px;
+    &__link:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.85;
+    color: $title-color;
+    display: flex;
+  }
+  &__link:not(:last-child) {
+    margin-right: 7px;
+  }
+  &__img-support {
+    margin-left: 5px;
+  }
+}
