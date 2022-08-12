@@ -1,0 +1,33 @@
+.all-games {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  background: $bg-color;
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.87;
+    color: $title-color;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.85;
+    color: $title-color;
+    display: flex;
+  }
+
+  &__img-support {
+    margin-left: 5px;
+  }
+}
+.games-grid {
+  background: #34363c;
+  border-radius: 8px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 62px);
+  grid-gap: 8px;
+}

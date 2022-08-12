@@ -25,6 +25,7 @@
   }
 }
 .exclusive-games {
+  justify-content: center;
   display: flex;
   margin-top: 8px;
   background: #34363c;
@@ -35,11 +36,16 @@
     line-height: 0.85;
     color: $description-color;
     text-align: center;
-    margin-bottom: 8px;
+    margin: 8px 0px 8px 0px;
   }
   &__img {
     width: 140px;
     height: 139px;
-    padding: 8px;
+  }
+  &__link {
+    padding: 8px 0px 8px 0px;
+  }
+  &__link:first-child {
+    margin-right: 8px;
   }
 }
