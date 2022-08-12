@@ -231,7 +231,6 @@ img {
 }
 
 .jackpot {
-  position: relative;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(shutterstock_1389470843.jpg);
   border-radius: 8px 8px 0px 0px;
 }
@@ -254,6 +253,9 @@ img {
   padding-top: 28px;
 }
 
+.jackpot__levels {
+  background: #34363c;
+}
 .jackpot__levels-title {
   font-weight: 600;
   font-size: 12px;
@@ -271,6 +273,9 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.jackpot__levels-group {
+  position: absolute;
 }
 
 .silver-level,
