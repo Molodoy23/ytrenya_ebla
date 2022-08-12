@@ -274,10 +274,6 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.jackpot__levels-group {
-  position: absolute;
-}
-
 .silver-level,
 .gold-level,
 .platinum-level {
